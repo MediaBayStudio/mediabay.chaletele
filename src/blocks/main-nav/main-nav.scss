@@ -1,0 +1,105 @@
+// В этом файле должны быть стили для БЭМ-блока main-nav, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-nav {
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    margin-right: 20px;
+
+    @media (min-width: $screen-sm) {
+      margin-right: 47px;
+    }
+
+    @media (min-width: $screen-md) {
+      margin-right: 57px;
+    }
+
+    a {
+      color: #000;
+      font-size: 9px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      position: relative;
+      z-index: 2;
+
+      @media (min-width: $screen-sm) {
+        font-size: 15px;
+        line-height: 1;
+      }
+
+      @media (min-width: $screen-md) {
+        font-size: 15px;
+        line-height: 1;
+      }
+    }
+
+    &--active,
+    &:hover {
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: rgba(252, 54, 77, 0.6);
+        right: 0px;
+        bottom: 3px;
+        width: 27px;
+        height: 4px;
+
+        @media (min-width: $screen-sm) {
+          width: 50px;
+          height: 5px;
+          right: -3px;
+          bottom: 4px;
+        }
+
+        @media (min-width: $screen-md) {
+          width: 47px;
+          height: 7px;
+          right: -1px;
+          bottom: 2px;
+        }
+      }
+    }
+
+    &:first-of-type:hover,
+    &:first-of-type.main-nav__item--active {
+      &::after {
+        width: 32px;
+
+        @media (min-width: $screen-sm) {
+          width: 60px;
+        }
+
+        @media (min-width: $screen-md) {
+          width: 55px;
+        }
+      }
+    }
+
+    &:last-of-type:hover,
+    &:last-of-type.main-nav__item--active {
+      &::after {
+        width: 49px;
+
+        @media (min-width: $screen-sm) {
+          width: 88px;
+        }
+
+        @media (min-width: $screen-md) {
+          width: 85px;
+        }
+      }
+    }
+  }
+
+
+}

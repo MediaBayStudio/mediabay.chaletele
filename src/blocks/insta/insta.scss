@@ -1,0 +1,26 @@
+// В этом файле должны быть стили для БЭМ-блока insta, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.insta {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 80px 20px 40px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: $font-title;
+    line-height: $line-title;
+    text-transform: uppercase;
+  }
+
+  &__wrapper {
+    width: calc(100% + 40px);
+    margin-top: 25px;
+    margin-left: -20px;
+    padding: 35px 20px;
+    background-color: #f8f4f4;
+  }
+}

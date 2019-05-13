@@ -1,0 +1,24 @@
+include ../mixins.pug
+
+doctype html
+html(class="no-js no-scroll page", lang="ru")
+
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href="https://fonts.googleapis.com/css?family=Fira+Sans&amp;subset=cyrillic", rel="stylesheet")
+
+    block meta
+      title Digital агентство Медиа Гавань - интернет-проекты любой сложности
+
+    block head
+      link(rel="stylesheet", href="css/style.css")
+      link(rel="shortcut icon", href="img/favicon.ico", type="image/x-icon")
+      script.
+        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+  body
+    //+loader()
+    block header
+    block page
+    block footer

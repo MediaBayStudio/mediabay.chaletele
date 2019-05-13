@@ -1,0 +1,37 @@
+// В этом файле должны быть стили для БЭМ-блока develop, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.develop {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 40px 20px 35px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 12px;
+    font-size: $font-title;
+    line-height: $line-title;
+    text-transform: uppercase;
+  }
+
+  &__wrapper {
+    width: calc(100% + 40px);
+    margin-top: 25px;
+    margin-left: -20px;
+    margin-bottom: 25px;
+    padding: 30px 20px 40px;
+    background-image: url('../img/devop-back--xs.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__info {
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}

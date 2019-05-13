@@ -1,0 +1,28 @@
+// В этом файле должны быть стили для БЭМ-блока result, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.result {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 100px 0 120px;
+  background-image: url('../img/result-back--xs.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  &__wrapper {
+    padding: 52px 20px 75px;
+    background-color: #f8f4f4;
+  }
+
+  &__title {
+    margin-bottom: 13px;
+    font-size: $font-title;
+    line-height: $line-title;
+    text-transform: uppercase;
+  }
+
+}

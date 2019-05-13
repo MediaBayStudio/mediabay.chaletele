@@ -1,0 +1,56 @@
+// В этом файле должны быть стили для БЭМ-блока prototype, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.prototype {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 50px 0 40px;
+  background-color: $main-background;
+  text-align: center;
+  box-sizing: content-box;
+
+  @media (min-width: $screen-sm) {
+    padding: 58px 170px 30px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: $font-title;
+    line-height: $line-title;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 4px;
+      margin-bottom: 20px;
+      font-size: $font-title__sm;
+      line-height: 1.2;
+    }
+  }
+
+  &__demo {
+    margin: 0 20px;
+    padding-top: 515px;
+    padding-bottom: 191px;
+    background-image: url('../img/prototype--xs.png');
+    background-position: center 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 450px;
+    margin-left: -10px;
+    padding: 15px 10px;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+
+    &--group {
+      width: calc(100% - 60px);
+      margin: 215px 10px 0;
+      padding: 23px 20px;
+    }
+  }
+}

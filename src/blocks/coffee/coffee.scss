@@ -1,0 +1,31 @@
+// В этом файле должны быть стили для БЭМ-блока coffee, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.coffee {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 20px 20px 33px;
+  background-image: url('../img/coffee-back--xs.jpg');
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 14px;
+    font-size: $font-title;
+    line-height: $line-title;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 450px;
+  }
+}

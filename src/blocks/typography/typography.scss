@@ -1,0 +1,164 @@
+// В этом файле должны быть стили для БЭМ-блока typography, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.typography {
+
+  $block-name:                &; // #{$block-name}__element
+
+  position: relative;
+  padding: 50px 20px 45px;
+  text-align: center;
+
+  @media  (min-width: $screen-sm) {
+    padding: 65px 20px 45px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/typography--sx.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: $font-title;
+    line-height: $line-title;
+    text-transform: uppercase;
+
+    @media  (min-width: $screen-sm) {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: $font-title__sm;
+      line-height: 1.2;
+    }
+  }
+
+  &__wrapper {
+    @media  (min-width: $screen-sm) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 35px 90px;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media  (min-width: $screen-sm) {
+      max-width: 345px;
+      margin-top: 53px;
+      margin-bottom: 55px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+
+      @media  (min-width: $screen-sm) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &--red::before {
+      background-color: #ee0000;
+      box-shadow: 0px 4px 15px rgba(178, 1, 1, 0.3);
+    }
+
+    &--white::before {
+      background-color: #ffffff;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    &--beige::before {
+      background-color: #F8F4F4;
+      box-shadow: 0px 4px 15px #D6D0D0;
+    }
+
+    span {
+      padding-top: 70px;
+      font-size: 11px;
+      line-height: 25px;
+      color: #9F9F9F;
+
+      @media  (min-width: $screen-sm) {
+        padding-top: 95px;
+        font-size: $font-main;
+        line-height: $line-main;
+      }
+    }
+  }
+
+  &__kelson {
+    margin-bottom: 30px;
+    font-family: Kelson, sans-serif;
+
+    @media  (min-width: $screen-sm) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__type {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 25px;
+
+    @media  (min-width: $screen-sm) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  &__line {
+    font-size: 11px;
+    line-height: 20px;
+    color: #BBBBBB;
+    letter-spacing: 1px;
+
+    @media  (min-width: $screen-sm) {
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__weight {
+    font-size: 12px;
+    line-height: 25px;
+    color: #EE0000;
+
+    @media  (min-width: $screen-sm) {
+      font-size: 14px;
+    }
+  }
+
+}

@@ -1,0 +1,117 @@
+// В этом файле должны быть стили для БЭМ-блока spetial, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.spetial {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 42px 20px 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: $font-title;
+    line-height: $line-title;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -35px;
+      right: 0;
+      width: 75px;
+      height: 180px;
+      background-image: url('../img/choose-back--xs.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__item {
+    padding: 30px 20px 60px;
+
+    &--choose {
+      background-image: url('../img/choose-back.jpg');
+      background-size: 100%;
+      background-position: 0 95px;
+      background-repeat: no-repeat;
+    }
+
+    &--reserve {
+      padding-bottom: 0;
+      background-image: url('../img/bron-back--xs.png');
+      background-size: 100% 1037px;
+      background-position: 0 175px;
+      background-repeat: no-repeat;
+    }
+
+    &--mobile {
+      padding-bottom: 0;
+    }
+  }
+
+  &__item-header {
+    margin-bottom: 18px;
+  }
+
+  &__wrapper {
+    min-height: 560px;
+    margin-top: 50px;
+    position: relative;
+
+    #{$block-name}__item-img {
+      position: absolute;
+      top: 0;
+
+      &--right {
+        right: -20px;
+        width: 89%;
+        max-width: 450px;
+      }
+
+      &--left {
+        top: 104px;
+        left: 0;
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  }
+
+  &__item-img {
+
+    &--full {
+      margin-top: 45px;
+      max-width: calc(100% + 40px);
+      margin-left: -20px;
+    }
+
+    &--center {
+      width: 93%;
+      margin-top: 25px;
+    }
+  }
+
+  &__mobiles {
+    margin-top: 30px;
+  }
+
+  &__mobile {
+    margin-bottom: 25px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__mob-img {
+    width: 85%;
+  }
+}

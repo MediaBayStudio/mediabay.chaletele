@@ -1,0 +1,86 @@
+// В этом файле должны быть стили для БЭМ-блока header, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.header {
+
+  padding: 16px 21px 10px;
+  display: flex;
+  justify-content: flex-start;
+
+  @media (min-width: $screen-sm) {
+    position: relative;
+    padding-top: 46px;
+    padding-left: 20px;
+    z-index: 2;
+  }
+
+  @media (min-width: $screen-md) {
+    padding-top: 46px;
+    padding-left: 42px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-left: 100px;
+  }
+
+  &__wrapper {
+    position: relative;
+    margin-right: 20px;
+
+    @media (min-width: $screen-sm) {
+      margin-right: 46px;
+    }
+
+    @media (min-width: $screen-md) {
+      margin-right: 67px;
+    }
+
+    &--active {
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 9px;
+        right: 0;
+        width: 30px;
+        height: 5px;
+        background-color: rgba(252, 54, 77, 0.6);
+
+        @media (min-width: $screen-sm) {
+          width: 45px;
+          height: 5px;
+          right: -5px;
+        }
+
+        @media (min-width: $screen-md) {
+          width: 50px;
+          height: 7px;
+          right: -4px;
+          bottom: 14px;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    width: 78px;
+    height: 26px;
+    margin-top: -3px;
+
+    @media (min-width: $screen-sm) {
+      width: 133px;
+      height: 25px;
+    }
+
+    @media (min-width: $screen-md) {
+      width: 130px;
+      height: 40px;
+      margin-top: -12px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 132px;
+    }
+  }
+}

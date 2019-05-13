@@ -1,0 +1,31 @@
+// В этом файле должны быть стили для БЭМ-блока concept, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.concept {
+
+  $block-name:                &; // #{$block-name}__element
+
+  min-height: 1160px;
+  padding: 50px 20px 50px;
+  background-image: url('../img/concept--xs.jpg');
+  background-size: 100%;
+  background-position: 0 340px;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: $font-title;
+    line-height: $line-title;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin-top: 29px;
+  }
+
+  &__item {
+    padding-bottom: 20px;
+  }
+}

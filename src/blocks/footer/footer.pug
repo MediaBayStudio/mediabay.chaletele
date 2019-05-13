@@ -1,0 +1,33 @@
+mixin footer(selected)
+  section.footer
+    a.footer__wrapper(href='/')
+      svg.footer__logo(width="90", height="22")
+        use(xlink:href="img/sprite-svg.svg#header-logo")
+    div.footer__contacts
+      div.footer__links
+        +footer-nav(selected)
+      a.footer__phone(href='tel:+78126605998') +7 (812) 660 59 98
+      div.footer__mail
+        a(href='mailto:hello@media-bay.ru') hello@media-bay.ru
+
+      div.footer__address Санкт-Петербург, пр. Обуховской обороны, д.&#160;86, лит. М, БЦ&#160;«Квартал», офис 509.
+    div.footer__soc
+      p.footer__copy © 2019 Студия Media bay. Все права защищены
+      ul.footer__socials
+        li.footer__social.footer__social--vk
+          a(href='#')
+            svg(width="27", height="15")
+              use(xlink:href="img/sprite-svg.svg#vk")
+            span.visually-hidden Вконтакте
+        li.footer__social.footer__social--fb
+          a(href='#')
+            svg(width="10", height="18")
+              use(xlink:href="img/sprite-svg.svg#facebook")
+            span.visually-hidden Facebook
+        li.footer__social.footer__social--inst
+          a(href='#')
+            svg(width="20", height="20")
+              use(xlink:href="img/sprite-svg.svg#instagram")
+            span.visually-hidden Instagram
+      a.footer__conf(href='/policy.html') Политика конфиденциальности
+    script(src='js/script.min.js')
