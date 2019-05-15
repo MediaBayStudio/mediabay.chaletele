@@ -6,20 +6,36 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  padding: 62px 20px 45px;
+  padding: 0 0 45px;
   background-color: $light-background;
-  background-image: url('../img/decor.png');
-  background-size: 100px 150px;
-  background-position: 0 5px;
-  background-repeat: no-repeat;
   font-size: $font-main;
   line-height: $line-main;
   text-align: center;
 
   @media (min-width: $screen-sm) {
-    padding: 122px 190px 135px;
+    background-image: url('../img/decor.png');
+    padding: 122px 155px 135px;
     background-size: 269px 389px;
-    background-position: 0 55px;
+    background-position: 0 45px;
+    background-repeat: no-repeat;
+  }
+
+  &__wrapper {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 62px;
+    padding-bottom: 34px;
+    background-image: url('../img/decor.png');
+    background-size: 100px 150px;
+    background-position: 0 6px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $screen-sm) {
+      max-width: 330px;
+      padding: 0;
+      background: none;
+    }
   }
 
   &__logo {
@@ -31,7 +47,8 @@
   }
 
   &__text {
-    margin-top: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @media (min-width: $screen-sm) {
       margin-top: 26px;

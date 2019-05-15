@@ -9,11 +9,27 @@
   padding: 80px 20px 40px;
   text-align: center;
 
+  @media (min-width: $screen-sm) {
+    padding-top: 73px;
+    padding-bottom: 60px;
+    background-image: url('../img/insta-back--sm.png');
+    background-position: 100% top;
+    background-size: 85% 100%;
+    background-repeat: no-repeat;
+  }
+
   &__title {
     margin-bottom: 10px;
     font-size: $font-title;
     line-height: $line-title;
     text-transform: uppercase;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 2px;
+      margin-bottom: 16px;
+      font-size: $font-title__sm;
+      line-height: 1.2;
+    }
   }
 
   &__wrapper {
@@ -22,5 +38,19 @@
     margin-left: -20px;
     padding: 35px 20px;
     background-color: #f8f4f4;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 45px;
+      padding: 55px 70px 80px;
+    }
+  }
+
+  &__text {
+
+    @media (min-width: $screen-sm) {
+      max-width: 460px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

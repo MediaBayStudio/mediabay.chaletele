@@ -11,7 +11,7 @@
   text-align: center;
 
   @media  (min-width: $screen-sm) {
-    padding: 65px 20px 45px;
+    padding: 70px 20px 120px;
   }
 
   &::after {
@@ -21,10 +21,18 @@
     margin-left: -25px;
     width: 50px;
     height: 50px;
-    background-image: url('../img/typography--sx.png');
+    background-image: url('../img/typography--xs.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media  (min-width: $screen-sm) {
+      bottom: 21px;
+      background-image: url('../img/typography--sm.png');
+      width: 92px;
+      height: 92px;
+      margin-left: -46px;
+    }
   }
 
   &__title {
@@ -34,7 +42,7 @@
     text-transform: uppercase;
 
     @media  (min-width: $screen-sm) {
-      margin-top: 10px;
+      margin-top: 2px;
       margin-bottom: 20px;
       font-size: $font-title__sm;
       line-height: 1.2;
@@ -47,7 +55,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      padding: 60px 35px 90px;
+      padding: 60px 35px 70px;
       background-color: #ffffff;
       box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
     }
@@ -66,8 +74,8 @@
     padding-right: 20px;
 
     @media  (min-width: $screen-sm) {
-      max-width: 345px;
-      margin-top: 53px;
+      max-width: 395px;
+      margin-top: 32px;
       margin-bottom: 55px;
     }
   }
@@ -134,6 +142,7 @@
     line-height: 25px;
 
     @media  (min-width: $screen-sm) {
+      margin-bottom: 23px;
       font-size: 20px;
       line-height: 25px;
     }
@@ -146,6 +155,7 @@
     letter-spacing: 1px;
 
     @media  (min-width: $screen-sm) {
+      margin-bottom: 5px;
       font-size: 12px;
       letter-spacing: 2px;
     }
@@ -157,6 +167,8 @@
     color: #EE0000;
 
     @media  (min-width: $screen-sm) {
+      display: block;
+      margin-top: 12px;
       font-size: 14px;
     }
   }

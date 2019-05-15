@@ -13,9 +13,18 @@
   background-repeat: no-repeat;
   text-align: center;
 
+  @media (min-width: $screen-sm) {
+    padding: 130px 120px 190px;
+    background-image: url('../img/result-back--sm.jpg');
+  }
+
   &__wrapper {
     padding: 52px 20px 75px;
     background-color: #f8f4f4;
+
+    @media (min-width: $screen-sm) {
+      padding: 87px 50px 125px;
+    }
   }
 
   &__title {
@@ -23,6 +32,13 @@
     font-size: $font-title;
     line-height: $line-title;
     text-transform: uppercase;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 2px;
+      margin-bottom: 16px;
+      font-size: $font-title__sm;
+      line-height: 1.2;
+    }
   }
 
 }

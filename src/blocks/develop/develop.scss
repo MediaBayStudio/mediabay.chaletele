@@ -9,11 +9,22 @@
   padding: 40px 20px 35px;
   text-align: center;
 
+  @media (min-width: $screen-sm) {
+    padding-top: 75px;
+  }
+
   &__title {
     margin-bottom: 12px;
     font-size: $font-title;
     line-height: $line-title;
     text-transform: uppercase;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 2px;
+      margin-bottom: 16px;
+      font-size: $font-title__sm;
+      line-height: 1.2;
+    }
   }
 
   &__wrapper {
@@ -26,9 +37,31 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-width: $screen-sm) {
+      padding-top: 45px;
+      background-image: url('../img/devop-back--sm.jpg');
+      background-size: 80% 70%;
+      background-position: 100% 0;
+    }
+  }
+
+  &__text {
+
+    @media (min-width: $screen-sm) {
+      max-width: 470px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__info {
+
+    @media (min-width: $screen-sm) {
+      max-width: 470px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     p {
       margin-bottom: 20px;

@@ -12,7 +12,7 @@
   box-sizing: content-box;
 
   @media (min-width: $screen-sm) {
-    padding: 58px 170px 30px;
+    padding: 70px 20px 30px;
   }
 
   &__title {
@@ -22,8 +22,8 @@
     text-transform: uppercase;
 
     @media (min-width: $screen-sm) {
-      margin-top: 4px;
-      margin-bottom: 20px;
+      margin-top: 2px;
+      margin-bottom: 18px;
       font-size: $font-title__sm;
       line-height: 1.2;
     }
@@ -37,6 +37,17 @@
     background-position: center 25px;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media (min-width: $screen-sm) {
+      margin: 0;
+      padding-top: 495px;
+      padding-bottom: 515px;
+      background-image: url('../img/prototype--xs.png'), url('../img/prototype--xs.png');
+      background-size: 360px auto, 360px auto;
+      background-repeat: no-repeat, no-repeat;
+      background-position: left 25px, right 125px;
+      text-align: left;
+    }
   }
 
   &__img {
@@ -47,10 +58,19 @@
     box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
     background: #ffffff;
 
-    &--group {
-      width: calc(100% - 60px);
-      margin: 215px 10px 0;
-      padding: 23px 20px;
+    @media (min-width: $screen-sm) {
+      max-width: 430px;
+      margin-left: 0;
+      padding: 23px 15px;
+    }
+  }
+
+  &__text {
+
+    @media (min-width: $screen-sm) {
+      max-width: 490px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

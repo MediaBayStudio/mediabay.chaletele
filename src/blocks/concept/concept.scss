@@ -14,18 +14,76 @@
   background-repeat: no-repeat;
   text-align: center;
 
+  @media  (min-width: $screen-sm) {
+    min-height: 1880px;
+    padding-top: 35px;
+    padding-bottom: 70px;
+    background-image: url('../img/concept--sm.jpg');
+    background-position: 0 395px;
+  }
+
   &__title {
     margin-bottom: 25px;
     font-size: $font-title;
     line-height: $line-title;
     text-transform: uppercase;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 2px;
+      margin-bottom: 16px;
+      font-size: $font-title__sm;
+      line-height: 1.2;
+    }
+  }
+
+  &__lead {
+
+    @media (min-width: $screen-sm) {
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__list {
     margin-top: 29px;
+
+    @media  (min-width: $screen-sm) {
+      position: relative;
+      margin-top: 40px;
+    }
   }
 
   &__item {
     padding-bottom: 20px;
+
+    @media  (min-width: $screen-sm) {
+      padding-bottom: 50px;
+    }
+  }
+
+  &__demo {
+
+    @media  (min-width: $screen-sm) {
+      width: 88%;
+    }
+
+    &--second {
+      @media  (min-width: $screen-sm) {
+        width: 75%;
+        margin-left: -100px;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &--third {
+      @media  (min-width: $screen-sm) {
+        width: 80%;
+        margin-top: -80px;
+        margin-right: -50px;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+      }
+
+    }
   }
 }
