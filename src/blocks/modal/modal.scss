@@ -5,7 +5,7 @@
 .modal {
 
   $block-name:                &; // #{$block-name}__element
-
+  font-family: $font-family-main;
   position: fixed;
   box-sizing: border-box;
   top: 50%;

@@ -14,6 +14,10 @@
     padding: 70px 20px 120px;
   }
 
+  @media (min-width: $screen-md) {
+    padding: 78px 40px 120px;
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -33,6 +37,13 @@
       height: 92px;
       margin-left: -46px;
     }
+
+    @media  (min-width: $screen-md) {
+      bottom: 30px;
+      width: 80px;
+      height: 80px;
+      margin-left: -40px;
+    }
   }
 
   &__title {
@@ -47,6 +58,12 @@
       font-size: $font-title__sm;
       line-height: 1.2;
     }
+
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+      margin-bottom: 25px;
+      font-size: $font-title__md;
+    }
   }
 
   &__wrapper {
@@ -58,6 +75,10 @@
       padding: 60px 35px 70px;
       background-color: #ffffff;
       box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+    }
+
+    @media (min-width: $screen-md) {
+      padding: 60px 40px 70px;
     }
   }
 
@@ -77,6 +98,12 @@
       max-width: 395px;
       margin-top: 32px;
       margin-bottom: 55px;
+    }
+
+    @media (min-width: $screen-md) {
+      max-width: 333px;
+      margin-top: 40px;
+      margin-bottom: 75px;
     }
   }
 
@@ -124,6 +151,11 @@
         font-size: $font-main;
         line-height: $line-main;
       }
+
+      @media  (min-width: $screen-md) {
+        padding-top: 105px;
+        font-size: 14px;
+      }
     }
   }
 
@@ -133,6 +165,17 @@
 
     @media  (min-width: $screen-sm) {
       margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-md) {
+      width: 45%;
+    }
+  }
+
+  &__fira {
+
+    @media (min-width: $screen-md) {
+      width: 45%;
     }
   }
 
@@ -159,6 +202,12 @@
       font-size: 12px;
       letter-spacing: 2px;
     }
+
+    @media (min-width: $screen-md) {
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 3px;
+    }
   }
 
   &__weight {
@@ -170,6 +219,10 @@
       display: block;
       margin-top: 12px;
       font-size: 14px;
+    }
+
+    @media (min-width: $screen-md) {
+      margin-top: 20px;
     }
   }
 

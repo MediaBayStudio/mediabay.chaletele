@@ -1,0 +1,70 @@
+// В этом файле должны быть стили для БЭМ-блока slick, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: rgb(201, 201, 201);
+    opacity: 1;
+    border-radius: 50%;
+    font-family: slick;
+    font-size: 6px;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.slick-dots li.slick-active button:before {
+    background-color: #e00;
+}
+
+.slick-next, .slick-prev {
+  height: 27px;
+  top: 41%;
+}
+
+.slick-arrow {
+  background-image: url('../img/arrow.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::before {
+    color: transparent;
+  }
+
+  @media (min-width: $screen-sm) {
+    height: 37px;
+  }
+
+  @media (min-width: $screen-md)  {
+    width: 27px;
+    height: 49px;
+    top: 180px;
+    right: -35px;
+  }
+
+  @media (min-width: $screen-xl)  {
+    top: 250px;
+  }
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+  background-image: url('../img/arrow.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slick-prev {
+  transform: rotate(180deg);
+
+  @media (min-width: $screen-md)  {
+    left: -35px;
+  }
+}

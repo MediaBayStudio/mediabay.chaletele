@@ -5,6 +5,7 @@
 .feedback {
   $block-name:                &; // #{$block-name}__element
 
+  font-family: $font-family-main;
   margin-bottom: 84px;
   padding: 60px 20px 27px;
   background-color: #f2fafa;

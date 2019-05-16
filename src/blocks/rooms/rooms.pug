@@ -1,2 +1,54 @@
 mixin rooms()
-  div rooms
+  ul.rooms__list
+    li.rooms__item
+      picture
+        img.rooms__img(src='img/foto_lux.jpg' width='340' height='227')
+      div.rooms__wrapper
+        h3.rooms__title Номер «Люкс»
+        p.rooms__lead Роскошный двухкомнатный номер с балконом и панорамным окном
+        div.rooms__price
+          strong Цены от:
+            =' '
+            span 5,000&nbsp;₽
+            =' '
+            span.rooms_period за ночь
+        a.rooms__book(href='#') Забронировать
+    li.rooms__item
+      picture
+        img.rooms__img(src='img/foto_standart.jpg' width='340' height='227')
+      div.rooms__wrapper
+        h3.rooms__title Номер «Стандарт»
+        p.rooms__lead Однокомнатный номер с террасой  и панорамным окном
+        div.rooms__price
+          strong Цены от:
+            =' '
+            span 10,000&nbsp;₽
+            =' '
+            span.rooms_period за ночь
+        a.rooms__book(href='#') Забронировать
+    li.rooms__item
+      picture
+        img.rooms__img(src='img/foto_sem.jpg' width='340' height='227')
+      div.rooms__wrapper
+        h3.rooms__title Шале «Семейное»
+        p.rooms__lead Уютный семейный дом из кедра  с отдельной спальней
+        div.rooms__price
+          strong Цены от:
+            =' '
+            span 10,000&nbsp;₽
+            =' '
+            span.rooms_period за ночь
+        a.rooms__book(href='#') Забронировать
+    li.rooms__item
+      picture
+        img.rooms__img(src='img/foto_ohot.jpg' width='340' height='227')
+      div.rooms__wrapper
+        h3.rooms__title Шале «Охотничье»
+        p.rooms__lead Кедровый дом с панорамными окнами и видом на озеро
+        div.rooms__price
+          strong Цены от:
+            =' '
+            span 10,000&nbsp;₽
+            =' '
+            span.rooms_period за ночь
+        a.rooms__book(href='#') Забронировать

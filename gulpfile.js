@@ -52,12 +52,16 @@ let images = [
 
 // Cписок обрабатываемых файлов в указанной последовательности
 let jsList = [
+  './node_modules/jquery/dist/jquery.min.js',
+  './node_modules/jquery-migrate/dist/jquery-migrate.min.js',
+  './node_modules/slick-carousel/slick/slick.min.js',
+  dirs.source + `/js/partials/*.js`,
   dirs.source + `/js/script.js`
 ];
 
 // Компиляция и обработка стилей
 gulp.task(`style`, function () {
-  return gulp.src(dirs.source + `/scss/style.scss`) // какой файл компилировать
+  return gulp.src(['./node_modules/slick-carousel/slick/slick.scss', './node_modules/slick-carousel/slick/slick-theme.scss', dirs.source + '/scss/style.scss']) // какой файл компилировать
     .pipe(plumber({ // при ошибках не останавливаем автоматику сборки
       errorHandler(err) {
         notify.onError({
@@ -177,7 +181,7 @@ gulp.task(`clean`, function () {
   ]);
 });
 
-// Конкатенация и углификация Javascript
+//Конкатенация и углификация Javascript
 gulp.task(`js`, function () {
   if (jsList.length) {
     return gulp.src(jsList)
@@ -193,6 +197,8 @@ gulp.task(`js`, function () {
     callback();
   }
 });
+
+
 
 // Сборка всего
 gulp.task(`build`, function (callback) {

@@ -11,6 +11,7 @@
 
   @media (min-width: $screen-sm) {
     padding-top: 75px;
+    padding-bottom: 42px;
   }
 
   &__title {
@@ -29,20 +30,21 @@
 
   &__wrapper {
     width: calc(100% + 40px);
-    margin-top: 25px;
+    margin-top: 2px;
     margin-left: -20px;
     margin-bottom: 25px;
-    padding: 30px 20px 40px;
-    background-image: url('../img/devop-back--xs.png');
-    background-size: cover;
-    background-position: center;
+    padding: 30px 20px 8px;
+    background-image: url('../img/devop-back--xs.jpg');
+    background-size: 78% 85%;
+    background-position: 100% 100%;
     background-repeat: no-repeat;
 
     @media (min-width: $screen-sm) {
-      padding-top: 45px;
+      margin-bottom: 15px;
+      padding-top: 71px;
       background-image: url('../img/devop-back--sm.jpg');
-      background-size: 80% 70%;
-      background-position: 100% 0;
+      background-size: 80% 77%;
+      background-position: 100% 22%;
     }
   }
 

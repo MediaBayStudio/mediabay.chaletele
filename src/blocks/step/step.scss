@@ -20,6 +20,10 @@
       line-height: 25px;
       letter-spacing: 1px;
     }
+
+    @media  (min-width: $screen-md) {
+      font-size: 12px;
+    }
   }
 
 }

@@ -22,6 +22,13 @@
     background-position: 0 395px;
   }
 
+  @media (min-width: $screen-md) {
+    position: relative;
+    padding-top: 32px;
+    background-image: url('../img/concept--md.jpg');
+    background-position: 0 95%;
+  }
+
   &__title {
     margin-bottom: 25px;
     font-size: $font-title;
@@ -34,6 +41,12 @@
       font-size: $font-title__sm;
       line-height: 1.2;
     }
+
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+      margin-bottom: 25px;
+      font-size: $font-title__md;
+    }
   }
 
   &__lead {
@@ -42,6 +55,11 @@
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @media (min-width: $screen-md) {
+      max-width: 570px;
+      font-size: $font-main--md;
     }
   }
 
@@ -52,13 +70,23 @@
       position: relative;
       margin-top: 40px;
     }
+
+    @media (min-width: $screen-md) {
+      margin-top: 58px;
+      z-index: 1;
+    }
   }
 
   &__item {
     padding-bottom: 20px;
 
     @media  (min-width: $screen-sm) {
-      padding-bottom: 50px;
+      margin-top: -9px;
+      padding-bottom: 0;
+    }
+
+    @media (min-width: $screen-md) {
+      padding-bottom: 15px;
     }
   }
 
@@ -68,22 +96,57 @@
       width: 88%;
     }
 
+    @media (min-width: $screen-md) {
+      width: 95%;
+    }
+
     &--second {
+      box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+
       @media  (min-width: $screen-sm) {
         width: 75%;
         margin-left: -100px;
-        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (min-width: $screen-md) {
+        width: 70%;
+        margin-left: -125px;
       }
     }
 
     &--third {
+      box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+
       @media  (min-width: $screen-sm) {
         width: 80%;
-        margin-top: -80px;
+        margin-top: -25px;
         margin-right: -50px;
-        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (min-width: $screen-md) {
+        width: 77%;
+        margin-top: -35px;
+        margin-right: -60px;
       }
 
     }
+  }
+
+  &__decore {
+    display: none;
+
+    @media (min-width: $screen-md)  {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -22px;
+      right: 0;
+      width: 0;
+      min-width: 0;
+      max-width: 92%;
+      height: 260px;
+      background-color: $main-background;
+    }
+
   }
 }

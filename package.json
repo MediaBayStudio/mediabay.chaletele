@@ -54,7 +54,9 @@
     "ttf2woff": "^2.0.1",
     "ttf2woff2": "^2.0.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

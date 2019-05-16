@@ -4,6 +4,8 @@
 
 .form {
 
+  font-family: $font-family-main;
+
   @media (min-width: $screen-sm) {
     padding-top: 62px;
     padding-left: 16px;

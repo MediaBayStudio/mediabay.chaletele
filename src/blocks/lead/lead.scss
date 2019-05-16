@@ -13,11 +13,18 @@
   text-align: center;
 
   @media (min-width: $screen-sm) {
-    background-image: url('../img/decor.png');
+    margin-top: 11px;
     padding: 122px 155px 135px;
+    background-image: url('../img/decor.png');
     background-size: 269px 389px;
     background-position: 0 45px;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $screen-md) {
+    padding: 172px 225px 160px;
+    background-size: 350px 500px;
+    background-position: 15px 45px;
   }
 
   &__wrapper {
@@ -52,6 +59,11 @@
 
     @media (min-width: $screen-sm) {
       margin-top: 26px;
+    }
+
+    @media (min-width: $screen-md) {
+      font-size: $font-main--md;
+      line-height: $line-main--md;
     }
   }
 }

@@ -15,6 +15,10 @@
     padding: 70px 20px 30px;
   }
 
+  @media (min-width: $screen-md) {
+    padding: 82px 40px 30px;
+  }
+
   &__title {
     margin-bottom: 10px;
     font-size: $font-title;
@@ -26,6 +30,12 @@
       margin-bottom: 18px;
       font-size: $font-title__sm;
       line-height: 1.2;
+    }
+
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+      margin-bottom: 25px;
+      font-size: $font-title__md;
     }
   }
 
@@ -47,6 +57,13 @@
       background-repeat: no-repeat, no-repeat;
       background-position: left 25px, right 125px;
       text-align: left;
+    }
+
+    @media (min-width: $screen-md) {
+      padding-top: 725px;
+      padding-bottom: 765px;
+      background-size: 48% auto, 48% auto;
+      background-position: left 55px, right 135px;
     }
   }
 
@@ -71,6 +88,11 @@
       max-width: 490px;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @media (min-width: $screen-md) {
+      max-width: 570px;
+      font-size: $font-main--md;
     }
   }
 }

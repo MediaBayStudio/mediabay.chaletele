@@ -6,7 +6,10 @@ html(class="no-js no-scroll page", lang="ru")
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic", rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Fira+Sans&amp;subset=cyrillic", rel="stylesheet")
+    link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css")
+    link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css")
 
     block meta
       title Digital агентство Медиа Гавань - интернет-проекты любой сложности
@@ -18,7 +21,7 @@ html(class="no-js no-scroll page", lang="ru")
         document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
   body
-    //+loader()
+    +loader()
     block header
     block page
     block footer
