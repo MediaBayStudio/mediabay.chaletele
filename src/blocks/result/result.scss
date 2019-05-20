@@ -18,12 +18,25 @@
     background-image: url('../img/result-back--sm.jpg');
   }
 
+  @media (min-width: $screen-md) {
+    position: relative;
+    padding: 160px 160px 190px;
+    background-image: url('../img/result-back--md.jpg');
+  }
+
   &__wrapper {
     padding: 52px 20px 75px;
     background-color: #f8f4f4;
 
     @media (min-width: $screen-sm) {
       padding: 87px 50px 125px;
+    }
+
+    @media (min-width: $screen-md) {
+      position: relative;
+      padding: 95px 60px 122px;
+      z-index: 2;
+
     }
   }
 
@@ -38,6 +51,39 @@
       margin-bottom: 16px;
       font-size: $font-title__sm;
       line-height: 1.2;
+    }
+
+    @media (min-width: $screen-md) {
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 22px;
+      font-size: $font-title__md;
+      z-index: 2;
+    }
+  }
+
+  &__text {
+
+    @media (min-width: $screen-md) {
+      position: relative;
+      font-size: $font-main--md;
+      line-height: $line-main--md;
+      z-index: 2;
+    }
+  }
+
+  &__decore {
+
+    @media (min-width: $screen-md) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-width: 0;
+      max-width: 500px;
+      width: 0;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      z-index: 1;
     }
   }
 

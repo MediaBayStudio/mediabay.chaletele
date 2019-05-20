@@ -14,6 +14,10 @@
     padding-bottom: 42px;
   }
 
+  @media (min-width: $screen-md) {
+    padding-top: 100px;
+  }
+
   &__title {
     margin-bottom: 12px;
     font-size: $font-title;
@@ -25,6 +29,12 @@
       margin-bottom: 16px;
       font-size: $font-title__sm;
       line-height: 1.2;
+    }
+
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+      margin-bottom: 19px;
+      font-size: $font-title__md;
     }
   }
 
@@ -46,6 +56,16 @@
       background-size: 80% 77%;
       background-position: 100% 22%;
     }
+
+    @media (min-width: $screen-md) {
+      margin-top: 42px;
+      padding-top: 57px;
+      padding-left: 35px;
+      padding-right: 35px;
+      background-image: url('../img/devop-back--md.jpg');
+      background-size: 100% 51%;
+      background-position: 100% 0%;
+    }
   }
 
   &__text {
@@ -55,12 +75,19 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    @media (min-width: $screen-md) {
+      position: relative;
+      font-size: $font-main--md;
+      line-height: $line-main--md;
+      z-index: 2;
+    }
   }
 
   &__info {
 
     @media (min-width: $screen-sm) {
-      max-width: 470px;
+      max-width: 570px;
       margin-left: auto;
       margin-right: auto;
     }

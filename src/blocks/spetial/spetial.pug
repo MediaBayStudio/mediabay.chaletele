@@ -7,6 +7,7 @@ mixin spetial()
       li.spetial__item.spetial__item--choose
           h3.spetial__item-header ВЫБОР НОМЕРА
           picture
+            source(srcset='img/spec-demo-1--md.jpg' media='(min-width: 1024px)')
             source(srcset='img/spec-demo-1--sm.jpg' media='(min-width: 768px)')
             img.spetial__item-img.spetial__item-img--choose(src='img/spec-demo-1.jpg' alt='Выбор номера')
       li.spetial__item.spetial__item--reserve
@@ -14,18 +15,23 @@ mixin spetial()
         p.spetial__item-text На странице номера мы показываем максимальное количество важной информации об интерьере и дополнительных вещах, что делают проживание еще более комфортным.
         div.spetial__wrapper
           picture
+            source(srcset='img/spec-demo-2--md.jpg' media='(min-width: 1024px)')
             source(srcset='img/spec-demo-2--sm.jpg' media='(min-width: 768px)')
             img.spetial__item-img.spetial__item-img--right(src='img/spec-demo-2.jpg' alt='Главная страница')
           picture
+            source(srcset='img/spec-demo-3--md.jpg' media='(min-width: 1024px)')
             source(srcset='img/spec-demo-3--sm.jpg' media='(min-width: 768px)')
             img.spetial__item-img.spetial__item-img--left(src='img/spec-demo-3.jpg' alt='Страница бронирования')
         p.spetial__item-text.spetial__item-text--second Доработали плагин бронирования. Форму теперь загружаем динамически, чтобы пользователю не пришлось тратить бесценные секунды на бессмысленное ожидание.
         picture
+          source(srcset='img/spec-demo-4--md.jpg' media='(min-width: 1024px)')
           source(srcset='img/spec-demo-4--sm.jpg' media='(min-width: 768px)')
           img.spetial__item-img.spetial__item-img--full(src='img/spec-demo-4.jpg' alt='Главная страница')
         picture
+          source(srcset='img/spec-demo-5--md.jpg' media='(min-width: 1024px)')
           source(srcset='img/spec-demo-5--sm.jpg' media='(min-width: 768px)')
           img.spetial__item-img.spetial__item-img--center(src='img/spec-demo-5.jpg' alt='Страница бронирования')
+        div.spetial__decore
       li.spetial__item.spetial__item--mobile
         p.spetial__item-text При создании мобильной версии постарались облегчить процесс заполнения формы, для этого этапы бронирования разбили на максимально простые действия.
         ul.spetial__mobiles

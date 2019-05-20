@@ -4,6 +4,8 @@
 
 .rooms {
 
+  $block-name:                &; // #{$block-name}__element
+
   &__list {
     max-width: none;
     width: 100%;
@@ -13,6 +15,11 @@
     @media (min-width: $screen-sm)  {
       width: 90%;
       margin-bottom: 17px;
+    }
+
+    @media (min-width: $screen-md) {
+      width: 100%;
+      max-width: 965px;
     }
   }
 
@@ -28,9 +35,58 @@
       margin-right: 10px;
     }
 
+    @media (min-width: $screen-md) {
+      position: relative;
+      margin-left: 15px;
+      margin-right: 15px;
+      max-width: 380px;
+      height: 590px;
+      background-color: transparent;
+    }
+
+    &:after {
+      @media (min-width: $screen-md) {
+        position: absolute;
+        content: '';
+        width: 310px;
+        height: 352px;
+        top: 240px;
+        left: -15px;
+        border: 2px solid rgba(238,0,0,0);
+        z-index: -1;
+        transition: .4s;
+      }
+    }
+
     img {
       width: 100%;
       height: auto;
+
+      @media (min-width: $screen-md) {
+        margin-left: 0;
+        margin-right: 0;
+        width: 280px;
+        height: 360px;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__item:hover {
+
+    #{$block-name}__price {
+      display: block;
+    }
+
+    #{$block-name}__book {
+      display: flex;
+      width: 140px;
+      height: 40px;
+    }
+
+    &:after {
+      border: 2px solid #e00;
     }
   }
 
@@ -56,6 +112,12 @@
       margin-left: -20px;
       background-color: #e00;
     }
+
+    @media (min-width: $screen-md) {
+      margin-top: 50px;
+      font-size: 24px;
+      line-height: 35px;
+    }
   }
 
   &__lead {
@@ -71,6 +133,10 @@
   &__price {
     font-size: 13px;
     margin-bottom: 25px;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
   }
 
   &__book {
@@ -91,6 +157,10 @@
 
     @media (min-width: $screen-sm) {
       width: 130px;
+    }
+
+    @media (min-width: $screen-md) {
+      display: none;
     }
   }
 

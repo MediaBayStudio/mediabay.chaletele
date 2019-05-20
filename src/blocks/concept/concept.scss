@@ -60,6 +60,7 @@
     @media (min-width: $screen-md) {
       max-width: 570px;
       font-size: $font-main--md;
+      line-height: $line-main--md;
     }
   }
 
@@ -72,7 +73,7 @@
     }
 
     @media (min-width: $screen-md) {
-      margin-top: 58px;
+      margin-top: 48px;
       z-index: 1;
     }
   }
@@ -86,7 +87,7 @@
     }
 
     @media (min-width: $screen-md) {
-      padding-bottom: 15px;
+      padding-bottom: 23px;
     }
   }
 
@@ -110,7 +111,7 @@
 
       @media (min-width: $screen-md) {
         width: 70%;
-        margin-left: -125px;
+        margin-left: -116px;
       }
     }
 
@@ -139,7 +140,7 @@
       content: '';
       display: block;
       position: absolute;
-      bottom: -22px;
+      bottom: -17px;
       right: 0;
       width: 0;
       min-width: 0;

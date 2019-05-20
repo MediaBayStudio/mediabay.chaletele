@@ -5,22 +5,37 @@ $light-warning:        rgba(238, 0, 0, 0.8);
 
 $font-family:           Fira Sans, Roboto, Helvetica Neue, sans-serif;
 $font-family-main:      Ubuntu, sans-serif;
+
+$font-xs:               8px;
+
 $font-main:             14px;
 $font-main--md:         16px;
-$font-xs:               8px;
+$font-main--lg:         17px;
+
 $font-title:            20px;
 $font-title__sm:        33px;
 $font-title__md:        38px;
+$font-title__lg:        45px;
+
 $font-second-title__sm: 27px;
-$font-second-line__sm:  50px;
+$font-second-title__md: 32px;
+
+$line-xs:               15px;
+
 $line-main:             20px;
 $line-main--md:         25px;
-$line-xs:               15px;
+$line-main--lg:         30px;
+
 $line-title:            30px;
+
+$font-second-line__sm:  50px;
+
+
+
 $text-color:            #000000;
 
 $screen-sm:           768px;
-$screen-md:           1000px;
+$screen-md:           1024px;
 $screen-lg:           1440px;
 $screen-xl:           1920px;
 

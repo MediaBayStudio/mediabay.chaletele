@@ -27,6 +27,10 @@
     background-position: 15px 45px;
   }
 
+  @media (min-width: $screen-lg) {
+    padding: 195px 155px 160px;
+  }
+
   &__wrapper {
     max-width: 320px;
     margin-left: auto;
@@ -43,6 +47,10 @@
       padding: 0;
       background: none;
     }
+
+    @media (min-width: $screen-lg) {
+      max-width: 440px;
+    }
   }
 
   &__logo {
@@ -50,6 +58,11 @@
     @media (min-width: $screen-sm) {
       width: 330px;
       height: 99px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 440px;
+      height: 135px;
     }
   }
 
@@ -64,6 +77,15 @@
     @media (min-width: $screen-md) {
       font-size: $font-main--md;
       line-height: $line-main--md;
+    }
+
+    @media (min-width: $screen-lg) {
+      max-width: 640px;
+      margin-top: 42px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: $font-main--lg;
+      line-height: $line-main--lg;
     }
   }
 }
