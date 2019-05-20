@@ -21,6 +21,10 @@
       width: 100%;
       max-width: 965px;
     }
+
+    @media (min-width: $screen-lg) {
+      max-width: 1300px;
+    }
   }
 
   &__item {
@@ -42,6 +46,11 @@
       max-width: 380px;
       height: 590px;
       background-color: transparent;
+    }
+
+    @media (min-width: $screen-lg) {
+      max-width: 500px;
+      min-height: 745px;
     }
 
     &:after {
@@ -67,8 +76,14 @@
         margin-right: 0;
         width: 280px;
         height: 360px;
-        -o-object-fit: cover;
         object-fit: cover;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 360px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }
@@ -77,16 +92,32 @@
 
     #{$block-name}__price {
       display: block;
+
+      @media (min-width: $screen-lg) {
+        font-size: 18px;
+      }
     }
 
     #{$block-name}__book {
       display: flex;
       width: 140px;
       height: 40px;
+
+
+      @media (min-width: $screen-lg) {
+        width: 150px;
+      }
     }
 
     &:after {
       border: 2px solid #e00;
+
+      @media (min-width: $screen-lg) {
+        width: 400px;
+        height: 500px;
+        top: 250px;
+        left: 0;
+      }
     }
   }
 
@@ -111,12 +142,24 @@
       height: 2px;
       margin-left: -20px;
       background-color: #e00;
+
+
+      @media (min-width: $screen-lg) {
+        width: 420px;
+        height: 501px;
+        top: 250px;
+        left: -15px;
+      }
     }
 
     @media (min-width: $screen-md) {
       margin-top: 50px;
       font-size: 24px;
       line-height: 35px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 60px;
     }
   }
 
@@ -128,6 +171,11 @@
     line-height: 1.5;
     color: #959595;
     font-style: italic;
+
+    @media (min-width: $screen-lg) {
+      padding: 0 30px 20px;
+      max-width: 360px;
+    }
   }
 
   &__price {

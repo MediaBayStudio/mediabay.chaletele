@@ -24,6 +24,10 @@
     background-image: url('../img/result-back--md.jpg');
   }
 
+  @media (min-width: $screen-lg) {
+    padding: 186px 310px 280px;
+  }
+
   &__wrapper {
     padding: 52px 20px 75px;
     background-color: #f8f4f4;
@@ -36,7 +40,10 @@
       position: relative;
       padding: 95px 60px 122px;
       z-index: 2;
+    }
 
+    @media (min-width: $screen-lg) {
+      padding: 110px 112px 175px;
     }
   }
 
@@ -60,6 +67,12 @@
       font-size: $font-title__md;
       z-index: 2;
     }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 25px;
+      font-size: $font-title__lg;
+      line-height: $line-title--lg;
+    }
   }
 
   &__text {
@@ -69,6 +82,11 @@
       font-size: $font-main--md;
       line-height: $line-main--md;
       z-index: 2;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-main--lg;
+      line-height: $line-main--lg;
     }
   }
 
@@ -84,6 +102,10 @@
       height: 100%;
       background-color: rgba(255, 255, 255, 0.7);
       z-index: 1;
+    }
+
+    @media (min-width: $screen-lg) {
+      max-width: 680px;
     }
   }
 

@@ -24,6 +24,12 @@
     @media  (min-width: $screen-md) {
       font-size: 12px;
     }
+
+    @media  (min-width: $screen-lg) {
+      font-size: 13px;
+      line-height: 25px;
+      letter-spacing: 2px;
+    }
   }
 
 }

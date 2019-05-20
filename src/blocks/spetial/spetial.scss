@@ -18,6 +18,10 @@
     padding-bottom: 10px;
   }
 
+  @media (min-width: $screen-lg) {
+    padding-top: 207px;
+  }
+
   &__title {
     margin-bottom: 10px;
     font-size: $font-title;
@@ -36,6 +40,12 @@
       margin-bottom: 25px;
       font-size: $font-title__md;
     }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 23px;
+      font-size: $font-title__lg;
+      line-height: $line-title--lg;
+    }
   }
 
   &__text {
@@ -50,6 +60,11 @@
       max-width: 570px;
       font-size: $font-main--md;
       line-height: $line-main--md;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-main--lg;
+      line-height: $line-main--lg;
     }
   }
 
@@ -85,6 +100,13 @@
         height: 450px;
         background-position: 75px 0;
       }
+
+      @media (min-width: $screen-lg) {
+        top: -90px;
+        width: 320px;
+        height: 550px;
+        background-position: 0;
+      }
     }
   }
 
@@ -100,9 +122,19 @@
       padding-bottom: 73px;
     }
 
+    @media (min-width: $screen-lg)  {
+      padding-top: 52px;
+      padding-bottom: 87px;
+    }
+
     &:last-of-type {
       @media (min-width: $screen-sm) {
         padding-bottom: 30px;
+      }
+
+      @media (min-width: $screen-lg) {
+        margin-top: -20px;
+        padding-top: 0;
       }
     }
 
@@ -149,6 +181,14 @@
         width: 330px;
         height: 330px;
       }
+
+      @media (min-width: $screen-lg) {
+        left: 143px;
+        bottom: 56px;
+        width: 380px;
+        height: 384px;
+        z-index: 2;
+      }
     }
 
     &--reserve {
@@ -170,6 +210,12 @@
         background-image: url('../img/bron-back--md.jpg');
         background-size: 100% 66%;
         background-position: 0px 91%;
+      }
+
+      @media (min-width: $screen-lg) {
+        background-image: url('../img/bron-back--lg.jpg');
+        background-size: 100% 62%;
+        background-position: 0px 73%;
       }
     }
 
@@ -199,6 +245,11 @@
     @media (min-width: $screen-md) {
       font-size: $font-second-title__md;
     }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 37px;
+      font-size: $font-second-title__lg;
+    }
   }
 
   &__wrapper {
@@ -216,11 +267,14 @@
       margin-top: 43px;
     }
 
+    @media (min-width: $screen-lg) {
+      min-height: 1640px;
+      margin-top: 41px;
+    }
+
     #{$block-name}__item-img {
       position: absolute;
       top: 0;
-
-
     }
   }
 
@@ -245,6 +299,13 @@
       line-height: $line-main--md;
     }
 
+    @media (min-width: $screen-lg) {
+      margin-top: -20px;
+      font-size: $font-main--lg;
+      line-height: $line-main--lg;
+    }
+
+
     &--second {
       margin-top: 0px;
     }
@@ -268,6 +329,10 @@
       @media (min-width: $screen-md) {
         width: 68%;
       }
+
+      @media (min-width: $screen-lg) {
+        width: 53%;
+      }
     }
 
     &--right {
@@ -286,6 +351,11 @@
       @media (min-width: $screen-md) {
         margin-right: -28%;
         width: 56%;
+      }
+
+      @media (min-width: $screen-lg) {
+        margin-right: -24%;
+        width: 48%;
       }
     }
 
@@ -311,6 +381,14 @@
         width: 74%;
         max-width: 740px;
       }
+
+      @media (min-width: $screen-lg) {
+        top: 288px !important;
+        left: 50%;
+        margin-left: -43%;
+        width: 58%;
+        max-width: 840px;
+      }
     }
 
     &--full {
@@ -327,6 +405,11 @@
       @media (min-width: $screen-md) {
         width: 92%;
         margin-left: 0;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 75%;
+        margin-top: 38px;
       }
     }
 
@@ -345,6 +428,12 @@
         width: 63%;
         margin-top: 44px;
         margin-right: 54px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 53%;
+        margin-top: 55px;
+        margin-right: 0;
       }
     }
   }
@@ -383,6 +472,14 @@
       background-image: url('../img/spetial__mob-back--md.jpg');
       background-size: 100% 65%;
       background-position: 0 43%;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 120px;
+      padding-right: 120px;
+      background-image: url('../img/spetial__mob-back--lg.jpg');
+      background-size: 100% 57%;
+      background-position: 0 50%;
     }
   }
 

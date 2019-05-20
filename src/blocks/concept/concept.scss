@@ -29,6 +29,13 @@
     background-position: 0 95%;
   }
 
+  @media (min-width: $screen-lg) {
+    padding-top: 96px;
+    padding-bottom: 90px;
+    background-image: url('../img/concept--lg.jpg');
+    background-position: 0 100%;
+  }
+
   &__title {
     margin-bottom: 25px;
     font-size: $font-title;
@@ -47,6 +54,12 @@
       margin-bottom: 25px;
       font-size: $font-title__md;
     }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 23px;
+      font-size: $font-title__lg;
+      line-height: $line-title--lg;
+    }
   }
 
   &__lead {
@@ -62,6 +75,12 @@
       font-size: $font-main--md;
       line-height: $line-main--md;
     }
+
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-main--lg;
+      line-height: $line-main--lg;
+    }
   }
 
   &__list {
@@ -76,6 +95,10 @@
       margin-top: 48px;
       z-index: 1;
     }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 55px;
+    }
   }
 
   &__item {
@@ -89,6 +112,10 @@
     @media (min-width: $screen-md) {
       padding-bottom: 23px;
     }
+
+    @media (min-width: $screen-lg) {
+      padding-bottom: 0;
+    }
   }
 
   &__demo {
@@ -99,6 +126,10 @@
 
     @media (min-width: $screen-md) {
       width: 95%;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 81%;
     }
 
     &--second {
@@ -112,6 +143,11 @@
       @media (min-width: $screen-md) {
         width: 70%;
         margin-left: -116px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 60%;
+        margin-left: -200px;
       }
     }
 
@@ -128,6 +164,13 @@
         width: 77%;
         margin-top: -35px;
         margin-right: -60px;
+      }
+
+
+      @media (min-width: $screen-lg) {
+        width: 77%;
+        margin-top: -30px;
+        margin-right: -160px;
       }
 
     }
@@ -147,6 +190,12 @@
       max-width: 92%;
       height: 260px;
       background-color: $main-background;
+    }
+
+    @media (min-width: $screen-lg) {
+      bottom: -110px;
+      max-width: 93%;
+      height: 430px;
     }
 
   }

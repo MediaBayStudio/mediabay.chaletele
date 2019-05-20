@@ -18,6 +18,10 @@
     padding: 78px 40px 120px;
   }
 
+  @media (min-width: $screen-lg) {
+    padding: 96px 180px 103px;
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -44,6 +48,13 @@
       height: 80px;
       margin-left: -40px;
     }
+
+    @media  (min-width: $screen-lg) {
+      bottom: -16px;
+      width: 100px;
+      height: 100px;
+      margin-left: -50px;
+    }
   }
 
   &__title {
@@ -64,6 +75,12 @@
       margin-bottom: 25px;
       font-size: $font-title__md;
     }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 23px;
+      font-size: $font-title__lg;
+      line-height: $line-title--lg;
+    }
   }
 
   &__wrapper {
@@ -79,6 +96,10 @@
 
     @media (min-width: $screen-md) {
       padding: 60px 40px 70px;
+    }
+
+    @media  (min-width: $screen-lg) {
+      padding: 80px 85px 90px;
     }
   }
 
@@ -105,6 +126,12 @@
       margin-top: 40px;
       margin-bottom: 75px;
     }
+
+    @media (min-width: $screen-lg) {
+      max-width: 414px;
+      margin-top: 42px;
+      margin-bottom: 85px;
+    }
   }
 
   &__item {
@@ -122,6 +149,11 @@
       @media  (min-width: $screen-sm) {
         width: 80px;
         height: 80px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 100px;
+        height: 100px;
       }
     }
 
@@ -156,6 +188,10 @@
         padding-top: 105px;
         font-size: 14px;
       }
+
+      @media (min-width: $screen-lg) {
+        padding-top: 127px;
+      }
     }
   }
 
@@ -170,12 +206,21 @@
     @media (min-width: $screen-md) {
       width: 45%;
     }
+
+    @media  (min-width: $screen-lg) {
+      width: 47%;
+    }
   }
 
   &__fira {
 
     @media (min-width: $screen-md) {
       width: 45%;
+    }
+
+
+    @media  (min-width: $screen-lg) {
+      width: 47%;
     }
   }
 
@@ -188,6 +233,12 @@
       margin-bottom: 23px;
       font-size: 20px;
       line-height: 25px;
+    }
+
+    @media  (min-width: $screen-lg) {
+      margin-bottom: 8px;
+      font-size: 25px;
+      line-height: 45px;
     }
   }
 
@@ -208,6 +259,11 @@
       line-height: 20px;
       letter-spacing: 3px;
     }
+
+    @media  (min-width: $screen-lg) {
+      font-size: 14px;
+      line-height: 25px;
+    }
   }
 
   &__weight {
@@ -223,6 +279,10 @@
 
     @media (min-width: $screen-md) {
       margin-top: 20px;
+    }
+
+    @media  (min-width: $screen-lg) {
+      margin-top: 15px;
     }
   }
 

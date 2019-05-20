@@ -101,12 +101,16 @@ const resultScroll = function () {
   const nextelementTopOffset = document.querySelector(`.feedback`).offsetTop;
   const newScrollTop = windowTopOffet - elementTopOffset;
   const decoreElement = document.querySelector(`.result__decore`);
+  let maxWidth = 500;
 
   if (windowTopOffet > elementTopOffset && windowTopOffet < nextelementTopOffset) {
     if (newScrollTop > lastResultScrollTop) {
       // спускаемся вниз
       const width = decoreElement.clientWidth;
-      if (width < 500) {
+      if (document.documentElement.clientWidth >= 1440) {
+        maxWidth = 680;
+      }
+      if (width < maxWidth) {
         decoreElement.style.width = width + 10 + `px`;
       } else {
         const leftOffset = window.innerWidth - (decoreElement.offsetLeft + width);

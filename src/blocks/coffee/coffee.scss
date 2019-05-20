@@ -25,7 +25,14 @@
   @media (min-width: $screen-md) {
     position: relative;
     padding-top: 57px;
-    background-image: url(../img/coffee-back--md.jpg);
+    background-image: url('../img/coffee-back--md.jpg');
+    background-position: 0 62%;
+    background-size: 100% auto;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-top: 27px;
+    background-image: url('../img/coffee-back--lg.jpg');
     background-position: 0 62%;
     background-size: 100% auto;
   }
@@ -48,6 +55,12 @@
       margin-bottom: 22px;
       font-size: $font-title__md;
     }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 23px;
+      font-size: $font-title__lg;
+      line-height: $line-title--lg;
+    }
   }
 
   &__text {
@@ -65,6 +78,12 @@
       margin-bottom: 58px;
       font-size: $font-main--md;
       line-height: $line-main--md;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 100px;
+      font-size: $font-main--lg;
+      line-height: $line-main--lg;
     }
   }
 
@@ -84,6 +103,10 @@
       max-width: 800px;
       z-index: 2;
     }
+
+    @media (min-width: $screen-lg) {
+      max-width: 835px;
+    }
   }
 
   &__decore {
@@ -99,6 +122,10 @@
       height: 87%;
       background-color: rgba(248, 244, 244, 0.4);
       z-index: 1;
+    }
+
+    @media (min-width: $screen-lg) {
+      height: 88%;
     }
   }
 }

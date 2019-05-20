@@ -2,20 +2,23 @@ mixin concept()
   section.concept
     span.step__title Шаг третий
     h2.concept__title КОНЦЕПТ ГЛАВНОЙ
-    p.concept__lead Отель находится в самом сердце Алтая, в месте уникального мягкого климата и незабываемых пейзажей. Визуальная концепция проекта строилась исходя из этих достоинств, и призвана наиболее ярко и эмоционально представить их.
+    p.concept__lead Отель находится в самом сердце Алтая, в месте уникального мягкого климата и незабываемых пейзажей. Строили визуальный концепт так, чтобы как можно ярче и эмоциональнее рассказать об этом.
     ul.concept__list
       li.concept__item
         picture
+          source(srcset='img/con-demo-1--lg.png' media='(min-width: 1400px)')
           source(srcset='img/con-demo-1--md.png' media='(min-width: 1024px)')
           source(srcset='img/con-demo-1--sm.png' media='(min-width: 768px)')
           img.concept__demo(src='img/con-demo-1.png' alt='Мокап главной страницы')
       li.concept__item
         picture
+          source(srcset='img/con-demo-2--lg.jpg' media='(min-width: 1400px)')
           source(srcset='img/con-demo-2--md.jpg' media='(min-width: 1024px)')
           source(srcset='img/con-demo-2--sm.jpg' media='(min-width: 768px)')
           img.concept__demo.concept__demo--second(src='img/con-demo-2.png' alt='Отдых в сердце Алтая')
       li.concept__item
         picture
+          source(srcset='img/con-demo-3--lg.jpg' media='(min-width: 1400px)')
           source(srcset='img/con-demo-3--md.jpg' media='(min-width: 1024px)')
           source(srcset='img/con-demo-3--sm.jpg' media='(min-width: 768px)')
           img.concept__demo.concept__demo--third(src='img/con-demo-3.png' alt='Что-то еще интересненькое')
