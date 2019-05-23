@@ -5,8 +5,8 @@
       arrows: false,
       mobileFirst: true,
       centerMode: false,
-      // autoplay: true,
-      // autoplaySpeed: 3000,
+      autoplay: true,
+      autoplaySpeed: 3000,
       responsive: [
         {
           breakpoint: 767,

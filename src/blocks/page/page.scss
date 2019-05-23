@@ -46,6 +46,9 @@ body {
   background-color: #fff;
   margin: 0;
   min-height: 100%;
+  max-width: $screen-xl;
+  margin-left: auto;
+  margin-right: auto;
   font-family: $font-family;
   font-size: $font-main;
   line-height: $line-main;

@@ -24,13 +24,17 @@
   @media (min-width: $screen-md) {
     padding: 172px 225px 160px;
     background-size: 350px 500px;
-    background-position: 15px 45px;
+    background-position: 5% 45px;
   }
 
   @media (min-width: $screen-lg) {
     padding: 195px 155px 160px;
     background-size: 410px 578px;
-    background-position: 170px 45px;
+    background-position: 17% 45px;
+  }
+
+  @media (min-width: $screen-xl) {
+    background-position: 25% 45px;
   }
 
   &__wrapper {
@@ -69,6 +73,9 @@
   }
 
   &__text {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
 

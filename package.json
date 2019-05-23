@@ -55,7 +55,8 @@
     "ttf2woff2": "^2.0.3"
   },
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "leader-line": "^1.0.5"
   },
   "husky": {
     "hooks": {

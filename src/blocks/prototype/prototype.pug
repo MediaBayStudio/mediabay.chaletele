@@ -4,6 +4,36 @@ mixin prototype()
     h2.prototype__title Прототипирование
     div.prototype__text
       p На этапе прототипирования все внимание уделили структуре и функциям проекта. Постарались нагляднее показать план расположения блоков на странице и их приоритетность.
-    section.prototype__demo
-      img.prototype__img(src='img/demo-1.jpg' alt='Номер Люкс')
-      //img.prototype__img.prototype__img--group(src='/img/demo-2.jpg' alt='Варианты размещения')
+    ul.prototype__demos
+      li.prototype__demo.prototype__demo--var
+        img.prototype__main-img(src='img/prototype--xs.png' alt='Прототип Варианты размещения')
+        ul.prototype__dots
+          li
+            span.prototype__dot.prototype__dot--header(id='headerDot')
+            picture
+              source(srcset='img/demo-header--lg.jpg' media='(min-width: 1400px)')
+              img.prototype__img.prototype__img--header(src='img/demo-header--md.jpg' alt='Варианты размещения' id='headerImg')
+          li
+            span.prototype__dot.prototype__dot--room(id='roomDot')
+            picture
+              source(srcset='img/demo-1--sm.jpg' media='(min-width: 768px)')
+              img.prototype__img.prototype__img--room(src='img/demo-1.jpg' alt='Номер Люкс' id='roomImg')
+          li
+            span.prototype__dot.prototype__dot--chale(id='chaleDot')
+            picture
+              source(srcset='img/demo-chale--lg.jpg' media='(min-width: 1400px)')
+              img.prototype__img.prototype__img--chale(src='img/demo-chale--md.jpg' alt='Шале Семейное' id='chaleImg')
+      li.prototype__demo.prototype__demo--history
+        img.prototype__main-img(src='img/prototype2--sm.png' alt='Прототип История места')
+        ul.prototype__dots
+          li
+            span.prototype__dot.prototype__dot--slider(id='sliderDot')
+            picture
+              source(srcset='img/demo-slider--lg.jpg' media='(min-width: 1400px)')
+              img.prototype__img.prototype__img--slider(src='img/demo-slider--md.jpg' alt='Фотогалерея' id='sliderImg')
+
+          li
+            span.prototype__dot.prototype__dot--gallery(id='galleryDot')
+            picture
+              source(srcset='img/demo-gallery--lg.jpg' media='(min-width: 1400px)')
+              img.prototype__img.prototype__img--gallery(src='img/demo-gallery.jpg' alt='Фотогалерея' id='galleryImg')

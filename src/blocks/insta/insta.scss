@@ -6,7 +6,7 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  padding: 80px 20px 40px;
+  padding: 50px 20px 40px;
   text-align: center;
 
   @media (min-width: $screen-sm) {
@@ -87,9 +87,16 @@
       z-index: 2;
     }
 
+    @media (min-width: $screen-lg) {
+      width: 1200px;
+    }
+
   }
 
   &__text {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media (min-width: $screen-sm) {
       max-width: 460px;

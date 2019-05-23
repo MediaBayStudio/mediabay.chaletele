@@ -136,9 +136,11 @@ const resultScroll = function () {
 };
 
 window.onscroll = function () {
-  conceptScroll();
-  reserveScroll();
-  coffeeScroll();
-  instaScroll();
-  resultScroll();
+  if (window.innerWidth >= 1024) {
+    conceptScroll();
+    reserveScroll();
+    coffeeScroll();
+    instaScroll();
+    resultScroll();
+  }
 };

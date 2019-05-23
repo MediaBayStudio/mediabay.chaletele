@@ -6,7 +6,7 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  padding: 40px 20px 35px;
+  padding: 10px 20px 35px;
   text-align: center;
 
   @media (min-width: $screen-sm) {
@@ -52,11 +52,11 @@
     width: calc(100% + 40px);
     margin-top: 2px;
     margin-left: -20px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     padding: 30px 20px 8px;
     background-image: url('../img/devop-back--xs.jpg');
-    background-size: 78% 85%;
-    background-position: 100% 100%;
+    background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
 
     @media (min-width: $screen-sm) {
@@ -79,15 +79,17 @@
 
     @media (min-width: $screen-lg) {
       margin-top: 60px;
-      margin-bottom: 35px;
-      padding-top: 175px;
+      margin-bottom: 40px;
+      padding-top: 70px;
       padding-left: 50px;
       padding-right: 50px;
-
     }
   }
 
   &__text {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media (min-width: $screen-sm) {
       max-width: 470px;
@@ -96,6 +98,7 @@
     }
 
     @media (min-width: $screen-md) {
+      max-width: 570px;
       position: relative;
       font-size: $font-main--md;
       line-height: $line-main--md;
@@ -110,11 +113,19 @@
   }
 
   &__info {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media (min-width: $screen-sm) {
       max-width: 570px;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @media (min-width: $screen-md) {
+      font-size: $font-main--md;
+      line-height: $line-main--md;
     }
 
     @media (min-width: $screen-lg) {

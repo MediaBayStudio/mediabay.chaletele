@@ -7,13 +7,14 @@
   $block-name:                &; // #{$block-name}__element
 
   &__list {
-    max-width: none;
     width: 100%;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
 
     @media (min-width: $screen-sm)  {
       width: 90%;
+      max-width: none;
       margin-bottom: 17px;
     }
 
@@ -29,10 +30,10 @@
 
   &__item {
     margin: 0;
-
     margin-bottom: 20px;
     padding-bottom: 40px;
     background-color: #f8f4f4;
+    outline: none;
 
     @media (min-width: $screen-sm) {
       margin-left: 10px;
@@ -88,7 +89,7 @@
     }
   }
 
-  &__item:hover {
+  &__item.slick-center, &__item:hover {
 
     #{$block-name}__price {
       display: block;
@@ -99,10 +100,12 @@
     }
 
     #{$block-name}__book {
-      display: flex;
-      width: 140px;
-      height: 40px;
 
+      @media (min-width: $screen-md) {
+        display: flex;
+        width: 140px;
+        height: 40px;
+      }
 
       @media (min-width: $screen-lg) {
         width: 150px;
@@ -110,7 +113,10 @@
     }
 
     &:after {
-      border: 2px solid #e00;
+
+      @media (min-width: $screen-md) {
+        border: 2px solid #e00;
+      }
 
       @media (min-width: $screen-lg) {
         width: 400px;
